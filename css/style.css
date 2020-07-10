@@ -1,88 +1,109 @@
+/*Global reset and body styles*/
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     font-size: 16px;
 }
 
-nav {
-    background: #fff;
-    padding: 0 15px;
-}
 
-.top {
+/*Header styles*/
+
+
+.nav {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    max-height: 35rem;
+    flex-direction: row;
+}
+
+
+
+.site-logo {
+    font-size: 24px;
+    padding: 20px 0 0 40px;
+    margin-right: auto;
     list-style: none;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo  {
-    font-size: 3rem;
-    padding: 20px;
-    width: 100%;
-    text-align: center;
-    color: rgb(227, 41, 41);
-
-}
-
-.item {
-    padding: 1rem;
-    width: 100%;
-    text-align: center;
-    color: #333;
     text-decoration: none;
-    font-size: 1rem;
+    color: rgb(227, 41, 41);
+    z-index: 100;
+    position: fixed;
 }
 
-.home {
-    background: #999;
-    
+.nav-links {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
 }
 
-.head-img{
-    height: 400px;
+.nav-links li a {
+    color: #888;
+    text-decoration: none;
+    font-size: 16px
+}
+
+
+
+.head-img {
+    display: flex;
+    align-items: center;
     width: 100%;
-    display: block;
-    background: rgba(0, 0, 0, .6);
-    
-}
-
-.header-text{
-    text-align: center;
-    margin: 40px 0;
+    height: auto;
+    margin-top: 80px;
 }
 
 
-@media only screen and (min-width: 760px) {
-    .top-nav ul{
-        display: flex;
-        flex-direction: row;
-        list-style: none;
-        justify-content: space-between;
-        max-height: 30rem;
-    }
-    
-    .head-img{
-    height: 600px;
-    width: 100%;
-    
-}
-    .item{
-        margin-left: auto;
-        padding: 1rem;
-    }
+.head-text {
+    position: absolute;
+    color: #fff;
+    top: 350px;
+    left: 40px;
+    line-height: 1.5;
+    font-size: 32px;
+    animation: fadeIn 2s;
+
 }
 
 
 
+.sub-head {
+    display: flex;
+    flex-direction: column;
+    max-height: 50px;
+}
 
+p {
+
+    margin-left: auto;
+    margin-right: 30px;
+    margin-top: 20px;
+    text-align: left;
+    padding: 20px;
+    width: 40%;
+    height: 20%;
+    max-height: 50px;
+}
+
+.sub-img {
+    width: 40%;
+    height: 40%;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+h2 {
+    align-self: flex-end;
+    margin: 30px 130px 0 auto;
+    color: rgb(38, 189, 248);
+
+}
 
 
 
@@ -90,11 +111,108 @@ nav {
 
 
 /*
-li:nth-child() {
-    flex: 0 1 50%;
-}
+Media Queries
+
 */
+@media screen and (max-width: 768px) {
+
+    .line {
+        width: 30px;
+        height: 3px;
+        background: #888;
+        margin: 4px
+    }
+
+
+
+    .hamburger {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 30px;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+    }
+
+    .nav-links {
+        position: fixed;
+        background: #fff;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(100px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+
+    .nav-links.open {
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+
+    .heading-img {
+        flex-direction: column
+    }
+
+    .nav-links li {
+        opacity: 0
+    }
+
+    .nav-links li a {
+        font-size: 25px
+    }
+
+    .nav-links li:nth-child(1) {
+        transition: all .5s ease .2s
+    }
+
+    .nav-links li:nth-child(2) {
+        transition: all .5s ease .4s
+    }
+
+    .nav-links li:nth-child(3) {
+        transition: all .5s ease .6s
+    }
+
+    li.fade {
+        opacity: 1
+    }
 }
 
 
+@media only screen and (min-width: 769px) {
 
+    .nav-links {
+        flex-direction: row;
+        justify-content: flex-end;
+        margin: 2em 3em 0 0;
+        margin-left: auto;
+    }
+
+
+
+    .site-logo {
+        font-size: 32px;
+        margin-right: auto;
+        height: auto;
+    }
+
+
+    .nav-links a {
+        margin: 0 1em 0 1em;
+    }
+
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        font-size: 100;
+    }
+}
