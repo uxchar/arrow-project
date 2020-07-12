@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 16px;
 }
 
@@ -23,6 +23,7 @@ body {
 
 
 .site-logo {
+    font-family: Noto Sans, Sans Serif;
     font-size: 24px;
     padding: 20px 0 0 40px;
     margin-right: auto;
@@ -35,6 +36,7 @@ body {
 
 .nav-links {
     display: flex;
+    background: #fff;
     list-style: none;
     width: 50%;
     height: 100%;
@@ -72,126 +74,219 @@ body {
 }
 
 
-
-.sub-head {
-    display: flex;
-    flex-direction: column;
-    max-height: 50px;
-}
-
-p {
-
-    margin-left: auto;
-    margin-right: 30px;
-    margin-top: 20px;
-    text-align: left;
-    padding: 20px;
-    width: 40%;
-    height: 20%;
-    max-height: 50px;
-}
-
-.sub-img {
-    width: 40%;
-    height: 40%;
-    margin-left: 30px;
+.grid {
+    display: grid;
     margin-top: 40px;
-}
-
-h2 {
-    align-self: flex-end;
-    margin: 30px 130px 0 auto;
-    color: rgb(38, 189, 248);
+    grid-template-columns: auto;
+    justify-items: center;
 
 }
 
 
 
+.content-img,
+.content-text {
+    margin: 80px 20px 0 20px;
+}
 
+
+
+.content-text-head {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.content-text {
+    line-height: 24px;
+}
+
+.user-img-woman {
+    height: auto;
+    width: 100%;
+
+}
+
+.choose-plan {
+    text-align: center;
+    margin: 50px 0 40px 0;
+}
+
+.plan-box {
+    width: 445px;
+    height: auto;
+    background-color: #888;
+    margin: 30px 10px;
+}
+
+.plan-box {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+}
+
+.basic {
+    background-color: rgb(52, 208, 255);
+    color: #444;
+}
+
+.essential {
+    color: #fff;
+    background-color: rgb(182, 182, 182);
+}
+
+.premium {
+    color: #fff;
+    background-color: rgb(227, 41, 41);
+    ;
+}
+
+h3 {
+    font-size: 24px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.price {
+    font-size: 40px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.dollar:before {
+    content: '$';
+    font-size: 20px;
+}
+
+.plan-benefits {
+    width: 80%;
+    height: auto;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px 0 0 25px;
+    padding: 0 0 20px 15px;
+
+}
+
+.plan-benefits li {
+    padding-bottom: 10px;
+}
+
+.plan-btn {
+    padding: 20px 35px;
+    border-radius: 30px;
+    margin: 5px auto;
+    display: block;
+
+}
+
+footer {
+    position: relative;
+    margin-top: 50px;
+    height: auto;
+    bottom: 0;
+    width: 100%;
+    background-color: #999;
+    color: white;
+    text-align: center;
+}
+
+.social-icon {
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    margin: 20px 20px 5px 20px;
+}
+
+.contact-icon {
+    margin-bottom: 5px;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+
+/*Hamburger Menu*/
+
+
+
+.line {
+    width: 30px;
+    height: 3px;
+    background: #888;
+    margin-top: 4px;
+}
+
+
+
+.hamburger {
+    position: fixed;
+    cursor: pointer;
+    right: 5%;
+    top: 30px;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+}
+
+.nav-links {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+}
+
+.nav-links.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+}
+
+.heading-img {
+    flex-direction: column;
+}
+
+.nav-links li {
+    opacity: 0;
+}
+
+.nav-links li a {
+    font-size: 25px;
+}
+
+.nav-links li:nth-child(1) {
+    transition: all .5s ease .2s;
+}
+
+.nav-links li:nth-child(2) {
+    transition: all .5s ease .4s;
+}
+
+.nav-links li:nth-child(3) {
+    transition: all .5s ease .6s;
+}
+
+li.fade {
+    opacity: 1;
+}
 
 
 /*
 Media Queries
 
 */
-@media screen and (max-width: 768px) {
-
-    .line {
-        width: 30px;
-        height: 3px;
-        background: #888;
-        margin: 4px
-    }
-
-
-
-    .hamburger {
-        position: absolute;
-        cursor: pointer;
-        right: 5%;
-        top: 30px;
-        transform: translate(-5%, -50%);
-        z-index: 2;
-    }
-
-    .nav-links {
-        position: fixed;
-        background: #fff;
-        height: 100vh;
-        width: 100%;
-        flex-direction: column;
-        clip-path: circle(100px at 90% -10%);
-        -webkit-clip-path: circle(100px at 90% -10%);
-        transition: all 1s ease-out;
-        pointer-events: none;
-    }
-
-    .nav-links.open {
-        clip-path: circle(1000px at 90% -10%);
-        -webkit-clip-path: circle(1000px at 90% -10%);
-        pointer-events: all;
-    }
-
-    .heading-img {
-        flex-direction: column
-    }
-
-    .nav-links li {
-        opacity: 0
-    }
-
-    .nav-links li a {
-        font-size: 25px
-    }
-
-    .nav-links li:nth-child(1) {
-        transition: all .5s ease .2s
-    }
-
-    .nav-links li:nth-child(2) {
-        transition: all .5s ease .4s
-    }
-
-    .nav-links li:nth-child(3) {
-        transition: all .5s ease .6s
-    }
-
-    li.fade {
-        opacity: 1
-    }
-}
 
 
 @media only screen and (min-width: 769px) {
 
     .nav-links {
         flex-direction: row;
+        background: transparent;
         justify-content: flex-end;
         margin: 2em 3em 0 0;
         margin-left: auto;
     }
-
-
 
     .site-logo {
         font-size: 32px;
@@ -204,15 +299,66 @@ Media Queries
         margin: 0 1em 0 1em;
     }
 
-}
-
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0%;
+    .nav-links li a{
+        color: #fff;
+        text-decoration: underline;
     }
 
-    100% {
-        font-size: 100;
+    .grid {
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr;
     }
-}
+
+
+    .content-text {
+        text-align: left;
+        grid-column-start: 2;
+
+    }
+
+    .content-img {
+        grid-row-start: 1;
+    }
+
+    .grid-plan {
+        grid-template-columns: 400px 400px 400px;
+        ;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: auto;
+        width: auto;
+        margin-top: 30px;
+    }
+
+    .choose-plan {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        justify-content: center;
+
+    }
+
+    .basic {
+        grid-row-start: 1;
+    }
+
+    .essential {
+        grid-row-start: 2;
+
+
+        .premium {
+            grid-row-start: 3;
+        }
+
+
+
+    }
+
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0%;
+        }
+
+        100% {
+            font-size: 100;
+        }
+    }
