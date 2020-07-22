@@ -12,7 +12,9 @@ body {
 }
 
 
+
 /*Navigation styles*/
+
 
 
 .nav {
@@ -33,15 +35,17 @@ body {
     position: fixed;
 }
 
-.nav-links {}
-
 .nav-links li a {
     color: #888;
     text-decoration: none;
     font-size: 16px
 }
 
+
+
 /*Hamburger Menu*/
+
+
 
 
 .hamburger {
@@ -101,6 +105,10 @@ body {
 
 
 
+/*Header elements*/
+
+
+
 
 .head-img {
     display: flex;
@@ -121,6 +129,11 @@ body {
     animation: fadeIn 1.5s;
 
 }
+
+
+
+/*Main body content*/
+
 
 
 .grid-content-1 {
@@ -171,6 +184,13 @@ body {
     opacity: 1;
     transform: rotateZ(-2deg);
   }
+
+
+
+/*Choose plan section */
+
+
+
 
 .choose-plan-title {
     text-align: center;
@@ -247,6 +267,11 @@ body {
     font-size: 1rem;
 }
 
+
+/*Footer section */
+
+
+
 footer {
     position: relative;
     height: 170px;
@@ -273,7 +298,6 @@ footer {
     width: 30px;
     margin: 0 0 0 15px;
 }
-
 
 
  .contact-info {
@@ -377,6 +401,11 @@ li.fade {
     transform: scale(1);
 }
 
+
+/*Newletter styles*/
+
+
+
 .newsletter {
     margin: 0 auto;
     height: 300px;
@@ -395,6 +424,18 @@ li.fade {
     font-size: 24px;
     margin: 150px auto 50px;
 }
+
+input[type=text]{
+    border-radius: 7px;
+    border: none;
+}
+
+input[type=text]:focus {
+    border: 3px solid lightblue;
+    border-radius: 7px;
+    font-family: inherit;
+
+  }
 
 .fname {
     font-size: 18px;
@@ -419,10 +460,11 @@ li.fade {
 
 
 
-/*
-Media Queries
 
-*/
+
+
+/*Media Queries*/
+
 
 
 @media only screen and (min-width: 769px) {
