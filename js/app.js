@@ -9,7 +9,6 @@ hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("open");
   links.forEach(link => {
     link.classList.toggle("fade");
-    
   });
 });
 
@@ -63,19 +62,15 @@ function isElementInViewport(el) {
 
 /* Email validation*/
 
+function checkEmail() {
 
-function ValidateEmail(inputText)
-{
-var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-if(inputText.value.match(mailformat))
-{
-document.form1.text1.focus();
-return true;
-}
-else
-{
-alert("You have entered an invalid email address!");
-document.form1.text1.focus();
-return false;
+  var email = document.getElementById('email');
+  var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+  if (!filter.test(email.value)) {
+  alert('Please provide a valid email address');
+  email.focus;
+  return false;
 }
 }
+

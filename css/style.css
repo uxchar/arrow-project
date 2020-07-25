@@ -269,6 +269,7 @@ body {
     display: block;
     font-weight: 600;
     font-size: 1rem;
+    outline: none;
 }
 
 .s-btn:hover{
@@ -444,7 +445,7 @@ input[type=text]:focus {
     margin: 10px 5px 10px;
 }
 
-.email {
+#mail {
     font-size: 18px;
     margin: 10px 5px 10px;}
 
