@@ -122,7 +122,7 @@ body {
 .head-text {
     position: absolute;
     color: #fff;
-    top: 350px;
+    top: 250px;
     left: 40px;
     line-height: 1.5;
     font-size: 32px;
@@ -153,7 +153,9 @@ body {
 .content-img-2,
 .content-text,
 .content-text-2 {
-    margin: 80px 20px 0 50px;
+    margin: 80px 20px 0 20px;
+    width: auto;
+    z-index: -1;
 }
 
 
@@ -201,7 +203,7 @@ body {
 }
 
 .plan-box {
-    width: 460px;
+    width: auto;
     height: 320px;
     background-color: #888;
     border-radius: 10px;
@@ -523,6 +525,10 @@ input[type=text]:focus {
         grid-template-columns: 1fr 1fr;
         margin-bottom: 150px;
         margin-top: 250px;
+    }
+
+    .head-text{
+        top: 350px;
     }
 
     .content-text-head {
