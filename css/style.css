@@ -25,6 +25,7 @@ body {
 
 .site-logo {
     font-family: inherit;
+    font-size: 32px;
     font-weight: 300;
     padding: 35px 0 0 40px;
     margin-right: auto;
