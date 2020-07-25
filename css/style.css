@@ -147,6 +147,8 @@ body {
 
 .grid-content-2 {
     display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
 }
 
 
