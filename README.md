@@ -12,7 +12,7 @@ Navigation that changes from mobile-friendly column to row depending on device s
 
 Use media query to switch from a one-column mobile layout to a two column layout 
 
-Newsletter form that takes in two fields of information and validates input (for example, it checks to ensure email is the [a@b.com](mailto:a@b.com) format
+Newsletter form that takes in two fields of information and validates input
 
 
 
