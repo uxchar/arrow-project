@@ -153,7 +153,7 @@ body {
 .content-img-2,
 .content-text,
 .content-text-2 {
-    margin: 80px 20px 0 20px;
+    margin: 80px 20px 0 50px;
 }
 
 
@@ -161,7 +161,10 @@ body {
 .content-text-head {
     margin-bottom: 45px;
     margin-top: 5%;
+    padding-bottom: 3px;
     text-align: center;
+    border-bottom: 2px solid rgb(52, 208, 255);
+    padding-bottom: 8px;
 }
 
 .content-text,
@@ -201,7 +204,8 @@ body {
     width: 460px;
     height: 320px;
     background-color: #888;
-    margin: 100px 10px 0 10px;
+    border-radius: 10px;
+    margin: 100px auto;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
 
 }
@@ -258,7 +262,7 @@ body {
     padding-bottom: 10px;
 }
 
-.plan-btn {
+.s-btn {
     padding: 20px 35px;
     border-radius: 30px;
     margin: auto;
@@ -267,6 +271,10 @@ body {
     font-size: 1rem;
 }
 
+.s-btn:hover{
+    color:#000000;
+    background-color:#FFFFFF;
+    }
 
 /*Footer section */
 
@@ -298,18 +306,6 @@ footer {
     width: 30px;
     margin: 0 0 0 15px;
 }
-
-
- .contact-info {
-    display: flex;
-    margin-right: auto;
-}
-
-.chat{
-    margin: 10px 15px;
-}
-
-
 
 
 
@@ -409,13 +405,15 @@ li.fade {
 .newsletter {
     margin: 0 auto;
     height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+
     background-color: rgb(211, 211, 211);
     
 }
 
 .newsletter-content {
     padding: 40px 0 10px 30px;
-
 }
 
 .newsletter-title {
@@ -426,26 +424,29 @@ li.fade {
 }
 
 input[type=text]{
-    border-radius: 7px;
+    padding:10px;
+    border-radius:10px;
+    width: 50%;
     border: none;
+    outline: none;
 }
 
 input[type=text]:focus {
-    border: 3px solid lightblue;
-    border-radius: 7px;
     font-family: inherit;
+    border: 4px solid rgb(52, 208, 255);
+   
+
 
   }
 
 .fname {
     font-size: 18px;
-    margin: 10px 0;
+    margin: 10px 5px 10px;
 }
 
 .email {
     font-size: 18px;
-    margin: 10px 0;
-}
+    margin: 10px 5px 10px;}
 
 .newsletter-btn {
     margin: 10px 0 20px 0;
@@ -467,7 +468,7 @@ input[type=text]:focus {
 
 
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
 
     .site-logo {
         font-size: 32px;
@@ -481,6 +482,7 @@ input[type=text]:focus {
         background-color: rgba(0, 0, 0, 0.10);
         justify-content: flex-end;
         margin: 2em 3em 0 0;
+        padding-top: 140px;
         padding-bottom: 500px;
         margin-left: auto;
     }
@@ -507,12 +509,13 @@ input[type=text]:focus {
     }
 
     .nav-links a {
-        margin: 0 1.5em 0 1.5em;
+        margin: 1.5em 1.5em 0 1.5em;
         padding: 15px 25px;
     }
 
     .nav-links li a {
         color: #fff;
+        
     }
 
     .grid-content-1 {
