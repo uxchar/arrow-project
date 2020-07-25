@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     font-size: 16px;
 }
 
@@ -24,7 +24,7 @@ body {
 
 
 .site-logo {
-    font-family: Noto Sans, Sans Serif;
+    font-family: inherit;
     font-size: 24px;
     padding: 35px 0 0 40px;
     margin-right: auto;
@@ -265,9 +265,10 @@ body {
 }
 
 .s-btn {
-    padding: 20px 35px;
-    border-radius: 30px;
-    margin: auto;
+    padding: 25px 40px;
+    border-radius: 40px;
+    margin: 0 auto;
+    margin-top: -20px;
     display: block;
     font-weight: 600;
     font-size: 1rem;
