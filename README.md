@@ -18,4 +18,4 @@ Newsletter form that takes in two fields of information and validates input (for
 
 ### **Instruction to Run**
 
-Arrow webpage needs no special instructions tor run.
+Arrow webpage needs no special instructions to run.
