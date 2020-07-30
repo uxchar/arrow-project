@@ -24,12 +24,12 @@ wrapperMenu.addEventListener('click', function(){
 
 function checkEmail() {
 
-  var email = document.getElementById('email');
-  var emailTest = /^([a-zA-Z0-9@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  var email = document.getElementById('mail');
+  var emailTest = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 
-  if (!emailTest.test(email.value)) {
+  if (!emailTest.test(mail.value)) {
   alert('Email address apears invalid, please provide your email address.');
-  email.focus;
+  mail.focus;
   return false;
 }
 }
