@@ -8,7 +8,7 @@ Use of CSS Grid and Flex
 
 Responsive layout
 
-Navigation that changes from mobile-friendly column to row depending on device size 
+Media query that changes hamburger navigation from mobile-friendly column to row on desktop screen
 
 Use media query to switch from a one-column mobile layout to a two column layout 
 
