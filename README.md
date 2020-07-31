@@ -12,7 +12,7 @@ Media query that changes hamburger navigation from mobile-friendly column to row
 
 Use media query to switch from a one-column mobile layout to a two column layout 
 
-Newsletter form that takes in two fields of information and validates input
+Newsletter form that takes in two fields of information and validates email input
 
 
 
